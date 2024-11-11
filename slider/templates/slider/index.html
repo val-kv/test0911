@@ -5,12 +5,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider Example</title>
+    <title>Nasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'slider/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'slider/css/style.css' %}">
 </head>
 
 <body>
+    <header class="header">
+        <a class="logo" href="index.html"><img src="slider/img/logo.svg" alt="logo"></a>
+        <nav class="menu">
+            <div class="menu_link">
+                <a class="link" href="#">Преимущества</a>
+            </div>
+            <div class="menu_link">
+                <a class="link" href="#">Фотографии</a>
+            </div>
+        </nav>
+        <button class="enter_button">Вход</button>
+    </header>
+    <section class="first_block center">
+        <div class="block_title">
+            <h1 class="block_title_text">Космическое агентство</h1>
+            <p class="block_subtitle">
+                Национальное управление по аэронавтике и исследованию космического пространства
+                — ведомство, относящееся к федеральному правительству
+                США и подчиняющееся непосредственно президенту США.
+            </p>
+        </div>
+        <div class="block_pictures">
+            <div class="left_block">
+                <div class="first_row">
+                    <div class="left_block_pictures">
+                        <img src="" alt="first_img" class="first_img">
+                        <p class="img_description">Спейс шаттлы —пилотируемые корабли</p>
+                    </div>
+                    <div class="left_block_pictures">
+                        <img src="" alt="first_img" class="first_img">
+                        <p class="img_description">Лучшее телескопическое оборудование</p>
+                    </div>
+                </div>
+                <div class="second_row">
+                    <div class="left_block_pictures"></div>
+                    <div class="left_block_pictures"></div>
+                </div>
+            </div>
+            <div class="right_block">
+
+            </div>
+        </div>
+
+    </section>
     <div class="container mt-5">
         <div class="slider">
             {% for image in images %}
