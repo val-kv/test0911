@@ -1,19 +1,19 @@
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
 }
 
 .header{
@@ -39,6 +39,7 @@ a {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+
 }
 
 .menu{
@@ -66,9 +67,13 @@ a {
 }
 
 .block_pictures{
+    height: 457px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-direction: row;
     gap: 127px;
+    padding: 0;
+    align-items: center;
 }
 
 .block_title{
@@ -96,8 +101,47 @@ a {
     text-align: center;
 }
 
+.first_row{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0px;
+}
+
+.second_row{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0px;
+}
+
+.left_block_pictures{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+
+}
+
+.img_description{
+    color: rgb(10, 18, 30);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+}
+
 .right_block{
-    height: 457px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 40px;
     box-shadow: 0px 12px 24px 0px rgba(0, 29, 86, 0.2);
     background: rgb(196, 196, 196);
